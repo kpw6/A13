@@ -133,6 +133,51 @@ a:hover {
 	font-style: italic;
 }
 
+ul#nav_menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#nav_menu li {
+	float: left;
+}
+
+ul#nav_menu li a {
+	width: 160px;
+	text-align: center;
+	padding: 0;
+	background-color: #800000;	
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+ul#nav_menu li a.current {
+	color: yellow;
+}
+
+ul#nav_menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+	list-style-type: none;
+}
+
+ul#nav_menu ul li {
+	float: left;
+}
+ul#nav_menu li:hover ul {
+	display: block;
+}
+
+ul#nav_menu::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 blockquote {
 	padding: 0em 2em;
 	font-style: italic;
